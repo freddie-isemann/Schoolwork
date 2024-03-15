@@ -1,0 +1,46 @@
+Command Prompt Usage:
+
+cd (directory_name) - This navigates to the chosen directory if the direct path is possible - you cannot use this to go through more folders unless you state the direct filepath to navigate (otherwise, use cd to navigate, dir to check all files and directories, and use cd again to navigate from there.
+
+cd.. - this simple command with the two dots tells the program to go back a level (go to the last directory) e.g. if you are in My Games in Documents, cd.. will take you back to Documents from My Games
+
+javac - This compiles any java program so you can run it using java (program_name). To do this however, you MUST navigate and compile the code either using the file path, or by being in the directory first
+
+java - this allows you to run any java program on your computer - you MUST have compiled it using javac first though
+
+Jupyter Terminal
+
+java (class_name) - this is how you run a class/program in JupyterHub terminal
+
+The git commands:
+
+git config - allows you to configure git, and you can choose the email option by following it with "--global user.email 'email@goes.here'" and your name by following it with "--global user.name 'nameGoesHere'"
+
+git clone - you can close an already existing repository here
+
+git init - you can initialise a new repository
+
+ls -a - lists all files and directories in the current directory
+
+git status - informs you of the status of your repository
+
+git add - this can be used to add a file to a repository
+
+git commit - this can be used to commit your changes to the repository (for example: git commit -m "Initial Commit")
+
+git remote add my_github <repository_url> - this can be used to add the remote repository (on github) to the local repository AS LONG AS YOU REPLACE THE URL WITH THE REMOTE REPOSITORY URL
+
+git remove -v - this can check which remote repositories are configured for your own local repository and their urls.
+
+git checkout - this changes what branch you are currently accessing in the repository
+
+git merge <branch_name> - this merges the changes of the currently accessed branch with the changes of the specified branch
+
+GitHub Schoolwork Repository Personal Access Token:
+
+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
+
+## WHEN PUSHING CHANGES TO THE REMOTE REPOSITORY - YOU MUST KEEP TRACK OF THIS/ANY PERSONAL ACCESS TOKENS TO BE ABLE TO PUSH THESE CHANGES
+## FURTHERMORE, WHEN ENTERING THE PERSONAL ACCESS TOKEN, EVEN WHEN COPYING AND PASTING, THE TERMINAL HIDES IT AND DOES NOT DISPLAY A NUMBER OF * OR EVEN THE LENGTH OF THE INPUTTED ITEM
+## THEREFORE, IT IS PARAMOUNT TO COPY AND PASTE IT ONCE AND ENTER
+

@@ -1,0 +1,34 @@
+    public Index[][] getDiagonals(int k) {
+        Index[][] temporary = new Index[n*m][k];
+        int count = 0;
+        for(Index i : Index.upTo(m, n)) {
+            if(i.row + k <= m && i.column +k <= n) {
+                for(int l=0; l<k ; l++)
+                    temporary[count][l] = new Index(i.row+l, i.column+l);
+                count++;
+            }
+        }
+
+        Index[][] ret = new Index[count][k];
+        for(Index i : Index.upTo(count, k)) {
+            ret[i.row][i.column] = temporary[i.row][i.column];
+        }
+        return ret;
+    }
+    public Index[][] getAdiagonals(int k) {
+        Index[][] temporary = new Index[n*m][k];
+        int count = 0;
+        for(Index i : Index.upTo(m, n)) {
+            if(i.row + k <= m && i.column - k >= -1) {
+                for(int l=0; l<k ; l++)
+                    temporary[count][l] = new Index(i.row+l, i.column-l);
+                count++;
+            }
+        }
+
+        Index[][] ret = new Index[count][k];
+        for(Index i : Index.upTo(count, k)) {
+            ret[i.row][i.column] = temporary[i.row][i.column];
+        }
+        return ret;
+    }
